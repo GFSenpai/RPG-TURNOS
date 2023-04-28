@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UsHb104FMH6ete/Wh49RmYY112iLkF5r2OiS5CoJ7Ek0PA9u8V8Cfx4mmmeQ77iumF+ckqpKW8zWzW1UjB5a+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gabriel Faria\\OneDrive\\Documentos\\Projetos\\RPG-TURNOS\\RPG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel Faria\\.nuget\\packages\\goblinfactory.konsole\\6.2.1\\goblinfactory.konsole.6.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
