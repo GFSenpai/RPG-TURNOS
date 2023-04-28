@@ -2,7 +2,7 @@
 using System.Threading;
 using Konsole;
 
-namespace CRPG
+namespace RPG
 {
     class Program
     {

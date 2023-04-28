@@ -2,7 +2,7 @@
 using System.Threading;
 using Konsole;
 
-namespace CRPG
+namespace RPG
 {
     class Batalha
     {
@@ -84,7 +84,7 @@ namespace CRPG
             var mnuAtacar = new MenuItem("Atacar", () =>
             {
                 telaStatusAndarConsole.ForegroundColor = ConsoleColor.Yellow;
-                telaStatusAndarConsole.WriteLine("Você ataca.");
+                telaStatusAndarConsole.WriteLine("  Você ataca.");
                 telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
 
                 Thread.Sleep(1000);
@@ -95,7 +95,7 @@ namespace CRPG
                     monstroBatalha.monstroHp -= dano / 2;
 
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Yellow;
-                    telaStatusAndarConsole.WriteLine($"Você deu {dano / 2} de dano.");
+                    telaStatusAndarConsole.WriteLine($"  Você deu {dano / 2} de dano.");
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
 
                     monstroBatalha.MosnterDesdefender();
@@ -105,14 +105,14 @@ namespace CRPG
                     monstroBatalha.monstroHp -= dano;
 
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Yellow;
-                    telaStatusAndarConsole.WriteLine($"Você deu {dano} de dano.");
+                    telaStatusAndarConsole.WriteLine($"  Você deu {dano} de dano.");
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
                 }
             });
             var mnuDefender = new MenuItem("Defender", () =>
             {
                 playerBatalha.PlayerDefender();
-                telaStatusAndarConsole.WriteLine("Você esta se defendendo.");
+                telaStatusAndarConsole.WriteLine("  Você esta se defendendo.");
             });
             var batalhaMenu = new Menu(telaMeioAndarConsole[1], "O que deseja fazer? (ESC para pular)",
                 ConsoleKey.Escape, 45,
@@ -136,7 +136,7 @@ namespace CRPG
                 case 0:
 
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Red;
-                    telaStatusAndarConsole.WriteLine($" {monstroBatalha.monstroNome} ataca você.");
+                    telaStatusAndarConsole.WriteLine($" {monstroBatalha.monstroNome}   ataca você.");
                     telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
 
                     Thread.Sleep(500);
@@ -149,7 +149,7 @@ namespace CRPG
                         Thread.Sleep(2000);
 
                         telaStatusAndarConsole.ForegroundColor = ConsoleColor.Red;
-                        telaStatusAndarConsole.WriteLine($"Você recebeu {danoDefendendo} de dano.");
+                        telaStatusAndarConsole.WriteLine($"  Você recebeu {danoDefendendo} de dano.");
                         telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
 
                         playerBatalha.PlayerDesdefender();
@@ -160,7 +160,7 @@ namespace CRPG
                         Thread.Sleep(2000);
 
                         telaStatusAndarConsole.ForegroundColor = ConsoleColor.Red;
-                        telaStatusAndarConsole.WriteLine($"Você recebeu {dano} de dano.");
+                        telaStatusAndarConsole.WriteLine($"  Você recebeu {dano} de dano.");
                         telaStatusAndarConsole.ForegroundColor = ConsoleColor.Gray;
                     }
                     break;

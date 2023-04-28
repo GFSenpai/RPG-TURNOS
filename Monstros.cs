@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRPG
+namespace RPG
 {
     public class Monstros
     {
@@ -56,13 +56,13 @@ namespace CRPG
         private readonly int[] monstroPiramideXpDrop = new int[] {24, 28, 30, 33, 32, 31};
 
         //Boss final
-        private readonly string chefeFinalNome = "Crystal";
+        private readonly string chefeFinalNome = "  .Crystal";
         private readonly int chefeHp = 128;
         private readonly int chefeAtk = 48;
         private readonly int chefeXpDrop = 500;
 
         //Void mosntro
-        private readonly string voidNome = "Voider";
+        private readonly string voidNome = "  .Voider";
         private readonly int voiderHp = 999;
         private readonly int voiderAtk = 999;
         private readonly int voiderXpDrop = 999;

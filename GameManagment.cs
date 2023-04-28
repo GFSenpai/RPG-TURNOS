@@ -1,7 +1,7 @@
 ﻿using System;
 using Konsole;
 
-namespace CRPG
+namespace RPG
 {
     class GameManagment
     {
@@ -9,9 +9,9 @@ namespace CRPG
         {
             Console.Clear();
 
-            var agradecimento = Window.OpenBox("Parabéns!!!", 40, 5);
-            agradecimento.WriteLine("Você conseguiu terminar o jogo.");
-            agradecimento.WriteLine("Obrigado por jogar.");
+            var agradecimento = Window.OpenBox("  Parabéns!!!", 40, 5);
+            agradecimento.WriteLine("  Você conseguiu terminar o jogo.");
+            agradecimento.WriteLine("  Obrigado por jogar.");
 
             Console.ReadKey();
 

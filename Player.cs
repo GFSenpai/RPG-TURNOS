@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Konsole;
 
-namespace CRPG
+namespace RPG
 {
     public record Player
     {

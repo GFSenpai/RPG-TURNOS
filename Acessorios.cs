@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using Konsole;
 
-namespace CRPG
+namespace RPG
 {
     public class Acessorios
     {
